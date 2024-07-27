@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Using JavaScript</title>
+    <link rel="icon" type="image/x-icon " href="https://media.licdn.com/dms/image/C510BAQF8NZaG8y9FZg/company-logo_200_200/0/1630634122113/ramakrishna_mission_vidyamandira_logo?e=2147483647&v=beta&t=9DW6S0VxfvFbweutYIMrGvBM2ruQJifsCmSRBrfBkN8">
+    <style>
+        #cha{
+            margin: 40px;
+            
+        }
+        .mid{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+        }
+    </style>
+    <script>
+        window.alert(240+100);
+        function butt(){
+            document.getElementById("para").innerHTML = "<u>Welcome HTML Tutorial Using JavaScript</u>";
+        }
+
+        function chang(){
+            document.getElementById("cha").style.backgroundColor="black";
+            document.getElementById("cha").style.color="red";
+
+        }
+        function bulbof(){
+            document.getElementById("bulb").style.backgroundColor="white";
+        }
+        function bulbon(){
+            document.getElementById("bulb").style.backgroundColor="yellow";
+        }
+
+        function bro(){
+            document.getElementById("cha").style.border="2px solid aqua";
+            document.getElementById("cha").style.boxShadow="0px  0px 4px 5px aqua";
+        }
+        function today(){
+            document.getElementById("to").innerHTML=Date();
+            document.getElementById("to").style.color="blue";
+        }
+        function nam(){
+            document.getElementById("na").innerHTML="<u>Create By Sukdeb</u>";
+            document.getElementById("na").style.color="green";
+
+        }
+    </script>
+</head>
+<body class="mid" id="cha">
+
+    <div>
+        <p style="font-size: 32px; font-weight: 700; text-shadow: 2px 2px 5px red;" id="para"><u>Web Development</u></p>
+        <button type="button" onclick="butt()">Click it</button>
+    </div>
+    <br>
+    <div>
+        <button type="button" onclick="chang()">Change Background</button>
+    </div>
+    <br>
+    <div>
+        <button type="button" onclick="bulbof()">Turn off light</button>
+        <div id="bulb" style="width: 50px; height: 50px;border: 2px solid red; display: inline-block; border-radius: 8px;">
+
+        </div>
+        <button type="button" onclick="bulbon()">Turn on light</button>  
+    </div>
+    <br>
+    <br>
+    <div>
+        <button style="position: relative; left: -40%;" type="button" onclick="bro()">border</button>
+
+    </div>
+    <div >
+        <button type="button" onclick="today()">Today Date</button> 
+        <p id="to"></p>
+    </div>
+    <br>
+    <br>
+    
+    <div>
+        <button style="position: relative; left: 40%;" type="button" onclick="nam()">Click here </button>
+        <p style="position: relative; left:40%" id="na"></p>
+
+    </div>
+    <br>
+    <div>
+        <button onclick="window.print()">print the page</button> 
+    </div>
+    <br>
+</body>
+</html>
