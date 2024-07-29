@@ -169,12 +169,12 @@
 // }
 
 // table
-var i=1;
-while(i<=10){
-    // var result=5*i;
-    console.log("5 * " + i +  " = "  + 5*i);
-    i++;
-}
+// var i=1;
+// while(i<=10){
+//     // var result=5*i;
+//     console.log("5 * " + i +  " = "  + 5*i);
+//     i++;
+// }
 
 // Do-While loop
 
@@ -188,3 +188,12 @@ while(i<=10){
 // for (var i=1;i<=10;i++){
 //     console.log(i);
 // }
+
+// Ex of do-while
+let userinput;
+let positivenumber;
+do{
+    userinput=prompt("Enter the positive number");
+    positivenumber=parseFloat(userinput);
+}while(isNaN(positivenumber) || (positivenumber<0));
+console.log("You Entered a Valid Positive Number: ", positivenumber);
