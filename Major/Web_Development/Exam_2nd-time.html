@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://play-lh.googleusercontent.com/THwZS1EtGBAkiR3Xhh_uZgAsOQCh0HZY9ykrvh0IjUG1uf7dNymVEaeW9y4BHCZvipA">
+    <title>Client Details</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            padding: 50px;
+            font-size: 30px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color:aqua;
+            background-attachment: fixed;
+            
+        }   
+        h1{
+            text-shadow: 2px 2px 5px white;
+        }
+        div.para1{
+            text-align: center;
+            background-color: #29404e;
+        }
+        
+        div.para2{
+            background-color: white;
+        }
+        .sub{
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #mid{
+            border-radius: 20px;
+            padding: 20px;
+            /* background-color: blue;  */
+        }
+        button{
+            font-size: bold;
+            
+        }
+        
+        button:hover{
+            cursor: pointer;
+            background-color: rgb(28, 199, 36);
+        }
+        button:active{
+            filter: brightness(0.8);
+        }
+        .para7{
+            display: flex;
+        }
+    </style>
+  </head>
+  <body style="width: 100vw">
+    <div class="Para">
+      <div class="para1">
+        <h1 style="color: white">Client Detalis</h1>
+        <p style="color: white; font-size: 20px">
+          Enter the details of all incoming clients
+        </p>
+      </div>
+          <div style="padding: 30px; font-size: 20px;" class="para2">
+              <label for="name">Client Name <span style="color: red; padding-right: 20px; ">*</span></label>
+                </div class>
+                    <input style="border: none; border-bottom: 1px solid black;" type="text" name="name" placeholder="Enter your name">
+                </div>
+              <div class="para3" style="font-size: 20px;padding-top: 30px;">
+                  <label for="company">Company <span style="color: red ;padding-right: 20px;">*</span></label>
+                  <input style="border: none; border-bottom: 1px solid black;" type="text" name="company" placeholder="Enter the name of company" required>
+                </div>
+                
+                <div class ="para4"  style="font-size: 20px;padding-top: 30px;">
+                    <label for="title">Title <span style="color: red ;padding-right: 20px;">*</span></label>
+                    <input style="border: none; border-bottom: 1px solid black;" type="text" id="title" placeholder="Enter your Title" name="title" required/>
+                </div>
+                <div class="para5"  style="font-size: 20px;padding-top: 30px;">
+                    <label for="department">Department <span style="color: red; padding-right: 20px; " >*</span></label>
+                    <select id="dept" name="department">
+                        <option value="" disabled selected>-Select-</option>
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="physics">Physics</option>
+                        <option value="chemistry">Computer chemistry</option>
+                        <option value="Bengali">Bengali</option>
+                        <option value="English">English</option>
+                    </select>
+                </div>
+                <div class="para6" style="font-size: 20px;padding-top: 30px;">
+                    <label for="contact">Preferred content Method <span style="color: red ; padding-right: 20px;">*</span></label>
+                    <input type="radio" name="contact" value="Email"> Email
+                    <input type="radio" name="contact" value="phone"> phone
+                </div>
+                <div style="font-size: 20px;padding-bottom:30px; padding-top: 20px;" class="para7">
+                    <label for="address">Company Address <span style="color:red ; padding-right: 10px;">*</span></label>
+                    <div class="class1">
+                        <div class="class2">
+                            <input type="text" >
+                            <p>street Address</p>
+                            
+                        </div>
+                        <div class="class3">
+                            <input type="text" >
+                            <p>Address line 2</p>
+                        </div>
+                        <div class="4">
+                            <div class="child1" style="display: flex; ">
+                                <div class="raj1" style="padding-right: 20px;">
+                                    <input type="text" >
+                                    <p>City</p>
+                                </div>
+                                <div class="raj2">
+                                    <input type="text" >
+                                    <p>State/Region/Province</p>
+                                </div>
+                            </div>
+                            <div class="child2" style="display: flex; " >
+                                <div class="suk1">
+                                    <input type="text"  >
+                                    <p>Postal/Zip Code</p>
+                                </div>
+                                <div class="suk2"  style="padding-left: 20px;">
+                                    <select>
+                                        <option value="" disabled selected>-Select-</option>
+                                        <option value="india">India</option>
+                                        <option value="Australia">Australia</option>
+                                        <option value="England">England</option>
+                                        <option value="West Indies">West Indies</option>
+                                    </select>
+                                    <p>City</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="font-size: 20px;padding-top: 10px;" class="para8">
+                    <label for="website">Company Website <span style="color: red; padding-right: 20px;">*</span></label>
+                    <input style="border: none; border-bottom: 1px solid black;" type="url" name="website" >
+                    <div class="para9" style="font-size: 20px;padding-top: 30px;">
+                        <label for="logo">Company Logo</label>
+                        <input style=" border: 2px dotted black;" type="file" name="logo" required>   
+                    </div>
+                    <div class="para10" style="font-size: 20px;padding-top: 30px;" >
+                        <label for="hours">Working Hours <span style="color: red; padding-right: 20px;">*</span></label>
+                        <input style="border: none; border-bottom: 1px solid black;" type="text" name="logo" required>
+                    </div>
+                    <div class="para11" style="font-size: 20px;padding-top: 30px;">
+                        <label for="day">Working Days <span style="color: red; padding-right: 20px;">*</span></label>
+                        <input style="border: none; border-bottom: 1px solid black;" type="text" name="day" required>
+                    </div>
+                    <div class="para12" style="font-size: 20px;padding-top: 30px;">
+                        <label for="date">Billing Cycle <span style="color: red; padding-right: 20px;">*</span></label>
+                        <input style="border: none; border-bottom: 1px solid black;" type="date" name="date" required>
+                    </div>
+                    <br>
+                    <div class="para13">
+                        <label for="information">Additional Information<span style="color: red; padding-right: 20px;">*</span></label>
+                        <textarea></textarea>
+                    </div>    
+                    <br>           
+                <div class="sub" style="padding-top: 10px;">
+                    <button id="mid" type="submit">Submit</button>
+                </div>  
+      </div>
+    </div>
+  </body>
+</html>
