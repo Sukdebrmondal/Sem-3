@@ -6,7 +6,7 @@ int main()
 {
     printf("Enter the value of n: ");
     scanf("%d", &n);
-    printf("Enter the equaction-1: ");
+    printf("Enter the equaction-1:\n");
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j <= n; j++)
