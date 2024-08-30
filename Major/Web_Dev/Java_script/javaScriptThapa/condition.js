@@ -189,11 +189,22 @@
 //     console.log(i);
 // }
 
-// Ex of do-while
-let userinput;
-let positivenumber;
-do{
-    userinput=prompt("Enter the positive number");
-    positivenumber=parseFloat(userinput);
-}while(isNaN(positivenumber) || (positivenumber<0));
-console.log("You Entered a Valid Positive Number: ", positivenumber);
+//? Ex of do-while
+// let userinput;
+// let positivenumber;
+// do{
+//     userinput=prompt("Enter the positive number");
+//     positivenumber=parseFloat(userinput);
+// }while(isNaN(positivenumber) || (positivenumber<0));
+// console.log("You Entered a Valid Positive Number: ", positivenumber);
+
+
+// !practice
+// calculate the sum of numbers from 1 to 10 using For loop
+var sum =0;
+debugger;
+for(var i=1;i<11;i++){
+    sum+=i;
+   
+}
+console.log(sum);
