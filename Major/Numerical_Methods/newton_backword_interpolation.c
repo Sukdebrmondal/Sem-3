@@ -37,6 +37,7 @@ int main()
         scanf("%lf %lf", &arr[i][0], &arr[i][1]);
     }
 
+
     /*Print*/
     printf("Print the value of X and Y:\n");
     printf("\tX\tY\n");
@@ -59,14 +60,14 @@ int main()
 
     /*print the Difference table*/
     printf("The backword  Difference Table:\n ");
-
+    int k=n-1;
     for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j <= n; j++)
+        for (int j = 0; j <= n-k; j++)
         {
             printf(" %.2lf ", arr[i][j]);
         }
-
+        k--;
         printf("\n");
     }
 

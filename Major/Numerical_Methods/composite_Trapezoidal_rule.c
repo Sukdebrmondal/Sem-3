@@ -27,7 +27,7 @@ int main()
         arr[i][1] = function(y);
         y = y + h;
     }
-    for (int i = 0; i <= n; i++)
+    for (int i = 0; i<= n; i++)
     {
         printf("%lf %lf\n", arr[i][0], arr[i][1]);
     }
